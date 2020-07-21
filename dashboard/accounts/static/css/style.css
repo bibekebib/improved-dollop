@@ -1,0 +1,56 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --thirdColor: #afeeee;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 1s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+body {
+  text-transform: uppercase;
+  letter-spacing: var(--mainLetterSpacing);
+  overflow-x: hidden;
+  transition: var(--mainTranisition);
+}
+.navbar-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  color: var(--PrimaryWhite);
+  background: var(--PrimaryBlack);
+}
+.navbar-container .navbar {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+}
+/* .navbar-container .navbar .logo {
+  display: flex;
+  flex: 1;
+} */
+.navbar-container .navbar .other-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.navbar-container .navbar .other-links li {
+  list-style: none;
+  margin: 0 0.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-container .navbar .other-links :last-child {
+  background-color: rgba(127, 255, 212, 0.274);
+  border-radius: 10px;
+}
