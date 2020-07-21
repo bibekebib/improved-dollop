@@ -34,10 +34,10 @@ body {
   justify-content: space-between;
   width: calc(100% - 2rem);
 }
-/* .navbar-container .navbar .logo {
-  display: flex;
-  flex: 1;
-} */
+.navbar-container .navbar .logo {
+  cursor: pointer;
+  font-size: larger;
+}
 .navbar-container .navbar .other-links {
   display: flex;
   flex: 1;
